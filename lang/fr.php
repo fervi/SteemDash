@@ -12,5 +12,6 @@ $lang_register = "S'inscrire";
 $lang_submit = "Soumettre";
 $lang_yourdashhere = "Écrivez votre Dash ici.";
 $lang_powered = 'Propulsé par <a href="https://steem.io/">Steem.</a>'; 
+$lang_powered = 'SteemDash  ❤️  <a href="https://github.com/fervi/SteemDash">code source</a>'
 
 ?>
