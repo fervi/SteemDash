@@ -1,0 +1,1 @@
+function votebutton(author,permlink, weight){return '<iframe src="https://steemconnect.com/embed/vote?author='+author+'&amp;permlink='+permlink+'&amp;weight='+weight+'" allowtransparency="true" scrolling="no" width="50" height="20" frameborder="0"></iframe>';}
