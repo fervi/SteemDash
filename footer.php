@@ -1,5 +1,7 @@
 <hr><center>
 <?php echo $lang_powered ?>
+<br />
+<?php echo $lang_opensource ?>
 </center></div></div>
 <script src="libs/js/steemdash.js"></script>
 <script src="libs/js/ajax.min.js"></script>
