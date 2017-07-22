@@ -42,7 +42,7 @@ echo '  <div class="panel panel-default">
     </div>
     <div class="panel-body">
     <div class="center-block">';
-echo strip_tags(nl2br($discussion['body']), '<br>');
+echo strip_tags(nl2br($discussion['body']), '<br>'); //* todo: fixed a "< >" bug *//
 
 echo '<center><hr>'.str_replace("SBD", "USD", $discussion['pending_payout_value']).'<br><script type="text/javascript">document.write(votebutton("'.$discussion["author"].'","'.$discussion["permlink"].'","2000"));</script></center>';
 
