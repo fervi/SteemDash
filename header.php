@@ -48,7 +48,7 @@ $actual_link = (isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP
 
 
        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">LANGs<span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo $lang_langs; ?><span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
 <?php
 
