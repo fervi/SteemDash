@@ -1,5 +1,7 @@
 <?php
 
+
+
 function userban($user)
 {
 include("banuser.php");
@@ -36,13 +38,15 @@ return 0;
 
 function showpost($discussion)
 {
+include("config.php");
+
 echo '  <div class="panel panel-default">
     <div class="panel-heading">
     <h3 class="panel-title"><a href="core.php?type=post&author='.$discussion['author'].'&permlink='.$discussion['permlink'].'">'.$discussion['author'].'</a></h3>
     </div>
     <div class="panel-body">
     <div class="center-block">';
-echo strip_tags(nl2br($discussion['body']), '<br>'); //* todo: fixed a "< >" bug *//
+echo str_replace($hidden, "", strip_tags(nl2br($discussion['body']), '<br>'));
 
 echo '<center><hr>'.str_replace("SBD", "USD", $discussion['pending_payout_value']).'<br><script type="text/javascript">document.write(votebutton("'.$discussion["author"].'","'.$discussion["permlink"].'","2000"));</script></center>';
 

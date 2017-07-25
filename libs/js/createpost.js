@@ -5,7 +5,7 @@ angular.module('app', [])
     steemconnect.init({
       baseURL: 'https://steemconnect.com',
       app: 'fervi',
-      callbackURL: 'http://www.steemdash.tk/'
+      callbackURL: 'http://pl.steemdash.tk/'
     });
 
     $scope.comments = {};
@@ -28,10 +28,10 @@ angular.module('app', [])
     this.getLoginURL = function() {
       return steemconnect.getLoginURL();
     };
-
     $scope.unixtime = Math.round(+new Date()/1000);
     this.submit = function() {
-      steemconnect.comment('', 'en-steemdash', $scope.username, $scope.unixtime, 'SteemDash Post', $scope.comment, '{"tags":["en-steemdash"],"app":"fervi/0.1","format":"markdown"}', function(err, result) {
+    $scope.comfixed = $scope.comment + "<hr><br><br>Powered by SteemDash.";
+      steemconnect.comment('', 'en-steemdash', $scope.username, $scope.unixtime, 'SteemDash Post', $scope.comfixed, '{"tags":["en-steemdash"],"app":"fervi/0.1","format":"markdown"}', function(err, result) {
         console.log(err, result);
         $scope.comment = '';
         $scope.$apply();
