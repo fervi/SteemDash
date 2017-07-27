@@ -1,8 +1,6 @@
 <?php
 include ('header.php');
-include ('libs/autoload.php');
+include ('vendor/autoload.php');
 
 echo $lang_hello;
 include ('footer.php');
-?>
-
