@@ -30,7 +30,7 @@ angular.module('app', [])
     };
     $scope.unixtime = Math.round(+new Date()/1000);
     this.submit = function() {
-    $scope.comfixed = $scope.comment + "<hr><br><br>Powered by SteemDash.";
+    $scope.comfixed = $scope.comment + "<hr>Powered by SteemDash.";
       steemconnect.comment('', 'en-steemdash', $scope.username, $scope.unixtime, 'SteemDash Post', $scope.comfixed, '{"tags":["en-steemdash"],"app":"fervi/0.1","format":"markdown"}', function(err, result) {
         console.log(err, result);
         $scope.comment = '';

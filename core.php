@@ -26,7 +26,9 @@ if(postban($discussion['author'], $discussion['permlink'])==0)
 
 if(userban($discussion['author'])==0)
 {
+
 showpost($discussion);
+
 }
 }
 }
