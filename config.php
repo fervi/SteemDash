@@ -1,8 +1,8 @@
 <?php
 
-$tag = 'pl-steemdash';
+$tag = 'en-steemdash';
 $limit = 50;
-$lang = "pl";
+$lang = "en";
 $hidden = "Powered by SteemDash.";
 
 include('lang/'.$lang.'.php');
