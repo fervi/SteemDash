@@ -1,6 +1,6 @@
 <?php
 include ('header.php');
-include ('libs/autoload.php');
+include ('vendor/autoload.php');
 include ('functions.php');
 
 $steem = new \SteemPHP\SteemArticle('https://steemd.steemit.com') or die;
